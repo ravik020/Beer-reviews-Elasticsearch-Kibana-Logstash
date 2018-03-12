@@ -1,0 +1,47 @@
+PUT beer_ind_samp4
+{
+  "settings": {
+    "index.mapping.ignore_malformed": true 
+  },
+  "mappings": {
+    "article": { 
+      "properties": {
+        "beer_ABV": {
+                  "type": "float"
+                  },
+        "beer_beerId": {
+                  "type": "text"
+                  },
+        "beer_brewerId": {
+                  "type": "text"               
+                  },
+        "beer_name": {
+                  "type": "text"
+                  },
+        "beer_style": {
+                  "type": "text"
+                  },
+        "review_appearance": {
+                  "type": "float"
+                  },
+        "review_aroma":{
+                  "type": "float"
+                  },
+        "review_palate": {
+                  "type": "float"
+                  },
+        "review_profileName": {
+                  "type": "text"
+                  },
+        "review_taste":{
+                  "type": "float"
+                  },
+        "review_text": {
+                  "type": "text",
+		  "analyzer": "standard"
+                  },
+        "review_time": { 
+                  "type": "date",
+		  "format": "yyyy-MM-dd"
+        }
+}}}}
